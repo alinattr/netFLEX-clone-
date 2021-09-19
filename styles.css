@@ -1,0 +1,166 @@
+/*Global Styles*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button,label,input {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+img {
+	width: 100%;
+}
+
+
+body  {
+font-family: 'Poppins', sans-serif;
+background: black;
+color: white;
+}
+
+/* Nav Section With Hero */
+
+.main-head {
+  color: white;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.9), transparent),url("/images/bg-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+} 
+
+nav {
+  display: flex;
+  flex: 1 1 40rem;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  flex: 1 1 40rem;
+}
+
+.logo img {
+  width: 160px;
+  height: 100px;
+}
+
+.selector {
+  background: black;
+  border: none;
+  color: white;
+  outline: none;
+  overflow: hidden;
+}
+
+option { 
+  background-color: #666;
+}
+
+#language {
+  color: white;
+  background: transparent;
+}
+
+.dropdown {
+  border: 1px solid white; 
+  padding: 0.80rem 1.5rem;
+  margin-right: 2%;
+  font-size: 1.3rem;
+}
+
+.sign-in {
+  background-color: #e50914;
+  border: 1px solid #e50914;
+  color: white;
+  border-radius: 0.30rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 0.80rem 1.5rem;
+  cursor: pointer;
+}
+
+.text-content {
+ display: flex;
+ flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin-top: 8rem;
+}
+
+.text-content h1 {
+  font-size: 4rem; 
+}
+
+.top {
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.bottom {
+  font-size: 1.8rem;
+  padding-bottom: 1.2rem;
+}
+.form {
+  display: flex;
+}
+
+.form input {
+  height: 60px;
+  width: 400px;
+  font-size: 1.5rem;
+  outline: none;
+}
+.form input text {
+  margin-left: 3%;
+}
+
+.items {
+  display: flex;
+  padding: 0 2rem 0 2rem;
+  background: #e50914;
+  cursor: pointer;
+  border: 2px solid #4b0004;
+}
+
+.get-started {
+  margin-right: 1rem;
+  background: #e50914;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.items i {
+  display: flex;
+  align-items: center;
+  background: #e50914;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+hr {
+  height: 5px;
+  font-weight: bold;
+  border: none;
+  background: #222;
+}
