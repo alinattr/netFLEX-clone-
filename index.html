@@ -14,10 +14,11 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
+
 <header class="main-head">
   <nav>
     <div class="logo">
-      <a href="index.html"><img src="images/logo.svg" alt="Netflix Logo"></a>
+      <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
     </div>
     <div class="dropdown">
       <i class="fas fa-globe"></i>
@@ -30,23 +31,46 @@
   </nav>
 
   <div class="text-content">
-    <h1>Unlimited films, TV <br> programmes and more.</h1>
+    <h1>Unlimited movies, TV <br> shows and more.</h1>
     <p class="top">Watch anywhere. Cancel anytime.</p>
     <p class="bottom">Ready to watch? Enter your email to create or restart your membership.</p>
 
-      <div class="form">
+      <div class="form-1">
         <input type="text" placeholder="Email address">
       <div class="items">
-        <button class="get-started">Get Started</button>
+        <button type="button" class="get-started" onclick="">Get Started</button>
         <i class="fal fa-angle-right"></i>
       </div> 
       </div>
   </div>
 </header>
+ 
+<hr>
+
+<section class="enjoy">
+  <div class="enjoy-text">
+      <h1>Enjoy on your TV.</h1>
+      <p>Watch on smart TVs, Playstation,
+          Xbox, Chromecast, Apple TV, Blu-ray
+          players and more.</p>
+  </div>
+      <div class="enjoy-img">
+          <img src="images/tv2.png" alt="TV Image">
+      </div>
+</section>
 
 <hr>
-   
- 
+
+<div class="final">
+    <div id="error"></div>
+    <form id="form" action="#" method="post">
+        <p>Sign In</p>
+        <input type="text" id="email" placeholder="Email" required>
+        <input type="text" id="password" placeholder="Password">
+        <button type="submit"  id="signIn" class="sbt">Sign in</button>
+        <span id="text"></span>
+    </form>
+</div>
 
 
 
@@ -56,8 +80,7 @@
 
 
 
-
-
+<script src="app.js"></script>
 </body>
 </html>
 

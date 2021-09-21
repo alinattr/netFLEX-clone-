@@ -15,13 +15,13 @@ button,label,input {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 h3 {
-  font-size: 3rem;
+  font-size: 5rem;
 }
 img {
-	width: 100%;
+ width: 100%;
 }
 
 
@@ -98,39 +98,43 @@ option {
 }
 
 .text-content {
- display: flex;
- flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
-margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 8rem;
 }
 
 .text-content h1 {
-  font-size: 4rem; 
+  font-size: 6rem;
 }
 
 .top {
   font-size: 2.5rem;
-  padding-bottom: 2rem;
+  padding-bottom: 2.0rem;
 }
 
 .bottom {
   font-size: 1.8rem;
-  padding-bottom: 1.2rem;
+  padding-bottom: 2rem;
 }
-.form {
+.form-1 {
   display: flex;
 }
 
-.form input {
-  height: 60px;
-  width: 400px;
+.form-1 input {
+  height: 8vh;
+  width: 500px;
   font-size: 1.5rem;
   outline: none;
+  color: #666666;
+  padding: 1rem;
 }
-.form input text {
+.form-1 input text {
   margin-left: 3%;
+  padding: 1rem 1rem;
+  font-weight: 600;
 }
 
 .items {
@@ -147,6 +151,8 @@ margin-top: 8rem;
   color: white;
   border: none;
   cursor: pointer;
+  height: 65px;
+  width: 230px;
 }
 
 .items i {
@@ -159,8 +165,101 @@ margin-top: 8rem;
 }
 
 hr {
-  height: 5px;
+  height: 10px;
   font-weight: bold;
   border: none;
   background: #222;
+}
+.enjoy {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+  margin: auto 300px;
+  paddint-top: 20px;
+}
+
+.enjoy-text {
+  max-width: 600px;
+  width: 100%;
+}
+
+.enjoy-text h1 {
+  font-size: 47px;
+  font-weight: 600;
+}
+
+.enjoy-text p {
+  margin-top: 10px;
+  font-size: 25px;
+  line-height: 35px;
+}
+.enjoy-img {
+  width: 500px;
+  padding-top: 20px;
+  opacity: 0.6;
+}
+.final {
+  width: 100%;
+  height: 100vh;
+}
+
+.final form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px;
+  margin-bottom: 4px;
+}
+
+.final input {
+  margin-bottom: 20px;
+  padding: 1rem;
+  width: 550px;
+  color: #666666;
+}
+
+.final p {
+  margin-bottom: 30px;
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.final .sbt {
+  background: #e50914;
+  color: #fff;
+  width: 550px;
+  height: 50px;
+  font-size: 3rem;
+  padding: 1rem 0 1rem 0;
+  margin-left: 10px;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+#text {
+  display: block;
+  color: #000;
+  font-weight: 300;
+  font-style:italic;
+  padding: 5px;
+}
+
+#form .inputBox {
+  position: relative;
+}
+#form.invalid #inputBox:before {
+  content: '';
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 24px;
+  height: 24px;
+  z-index: 1000;
 }
