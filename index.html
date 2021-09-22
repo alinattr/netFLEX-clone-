@@ -11,76 +11,102 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="images/icon.svg">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
 
-<header class="main-head">
-  <nav>
-    <div class="logo">
-      <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
-    </div>
-    <div class="dropdown">
-      <i class="fas fa-globe"></i>
-      <select name="language"id="language" class="selector">
-          <option value="English"selected>English</option>
-          <option value="Russian">Russian</option>
-      </select>
-    </div>
-    <button class="sign-in">Sign in</button>
-  </nav>
+<header class="main">
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+        </div>
+        <div class="dropdown">
+            <i class="fas fa-globe"></i>
+            <select name="language" id="language" class="selector">
+                <option value="English" selected>English</option>
+                <option value="Russian">Russian</option>
+            </select>
+        </div>
+        <button class="sign-in">Sign in</button>
+    </nav>
 
-  <div class="text-content">
-    <h1>Unlimited movies, TV <br> shows and more.</h1>
-    <p class="top">Watch anywhere. Cancel anytime.</p>
-    <p class="bottom">Ready to watch? Enter your email to create or restart your membership.</p>
+    <div class="text-content">
+        <h1>Unlimited movies, TV <br> shows and more.</h1>
+        <p class="top">Watch anywhere. Cancel anytime.</p>
+        <p class="bottom">Ready to watch? Enter your email to create or restart your membership.</p>
 
-      <div class="form-1">
-        <input type="text" placeholder="Email address">
-      <div class="items">
-        <button type="button" class="get-started" onclick="">Get Started</button>
-        <i class="fal fa-angle-right"></i>
-      </div> 
-      </div>
-  </div>
+        <div class="form-1">
+            <input type="text" placeholder="Email address">
+            <div class="items">
+                <button class="get-started" onclick="">Get Started</button>
+                <i class="fal fa-angle-right"></i>
+            </div>
+        </div>
+    </div>
 </header>
- 
+
 <hr>
 
 <section class="enjoy">
-  <div class="enjoy-text">
-      <h1>Enjoy on your TV.</h1>
-      <p>Watch on smart TVs, Playstation,
-          Xbox, Chromecast, Apple TV, Blu-ray
-          players and more.</p>
-  </div>
-      <div class="enjoy-img">
-          <img src="images/tv2.png" alt="TV Image">
-      </div>
+    <div class="enjoy-text">
+        <h1>Enjoy on your TV.</h1>
+        <p>Watch on smart TVs, Playstation,
+            Xbox, Chromecast, Apple TV, Blu-ray
+            players and more.</p>
+    </div>
+    <div class="enjoy-img">
+        <img src="images/tv.png" alt="tv">
+    </div>
+</section>
+
+<hr>
+
+<section class="download">
+    <div class="mobile-img">
+        <img class="mobile-img" src="images/mobile.png" alt="mobile">
+    </div>
+    <div class="download-text">
+        <h1>Download your shows to watch offline.</h1>
+        <p>Save your favourites easily and always have something to watch.</p>
+    </div>
+</section>
+
+<hr>
+
+<section class="freq">
+    <div class="faqs">
+        <h1>Frequently Asked Questions</h1>
+        <div class="questions">
+
+        </div>
+        </div>
+    </div>
 </section>
 
 <hr>
 
 <div class="final">
-    <div id="error"></div>
     <form id="form" action="#" method="post">
         <p>Sign In</p>
-        <input type="text" id="email" placeholder="Email" required>
-        <input type="text" id="password" placeholder="Password">
-        <button type="submit"  id="signIn" class="sbt">Sign in</button>
-        <span id="text"></span>
+        <div class="form-action">
+            <input type="text" id="email" placeholder="Email">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+        <div class="form-action">
+            <input type="text" id="password" placeholder="Password">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+        <button type="submit" id="signIn" class="sbt">Sign in</button>
     </form>
 </div>
 
-
-
-
-
-
-
-
-
 <script src="app.js"></script>
+
 </body>
 </html>
 

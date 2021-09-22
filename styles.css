@@ -33,9 +33,9 @@ color: white;
 
 /* Nav Section With Hero */
 
-.main-head {
+.main {
   color: white;
-  width: 100%;
+  max-width: 100%;
   background-image: linear-gradient(rgba(0,0,0,0.9), transparent),url("images/bg-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -54,7 +54,7 @@ nav {
 
 .logo {
   display: flex;
-  flex: 1 1 40rem;
+  flex: 1 1;
 }
 
 .logo img {
@@ -67,7 +67,6 @@ nav {
   border: none;
   color: white;
   outline: none;
-  overflow: hidden;
 }
 
 option { 
@@ -121,10 +120,10 @@ option {
 }
 .form-1 {
   display: flex;
+  align-content: center;
 }
-
 .form-1 input {
-  height: 8vh;
+  height: 70px;
   width: 500px;
   font-size: 1.5rem;
   outline: none;
@@ -136,7 +135,6 @@ option {
   padding: 1rem 1rem;
   font-weight: 600;
 }
-
 .items {
   display: flex;
   padding: 0 2rem 0 2rem;
@@ -151,16 +149,19 @@ option {
   color: white;
   border: none;
   cursor: pointer;
-  height: 65px;
-  width: 230px;
+  height: 68px;
+  width: 250px;
+  font-size: 3rem;
+  border-radius: 3px;
+  font-weight: 500;
 }
 
-.items i {
+.items  {
   display: flex;
   align-items: center;
   background: #e50914;
   color: white;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
@@ -170,13 +171,15 @@ hr {
   border: none;
   background: #222;
 }
+
+/* Section 1 */
+
 .enjoy {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 500px;
-  margin: auto 300px;
-  paddint-top: 20px;
+  height: 450px;
+  margin: auto 40rem;
 }
 
 .enjoy-text {
@@ -185,41 +188,89 @@ hr {
 }
 
 .enjoy-text h1 {
-  font-size: 47px;
+  font-size: 4rem;
   font-weight: 600;
 }
 
 .enjoy-text p {
-  margin-top: 10px;
-  font-size: 25px;
-  line-height: 35px;
+  margin-top: 1rem;
+  font-size: 3rem;
+  line-height: 3rem;
 }
 .enjoy-img {
   width: 500px;
-  padding-top: 20px;
+  padding-top: 4rem;
   opacity: 0.6;
 }
-.final {
-  width: 100%;
-  height: 100vh;
+/* Section 2 */
+
+.download {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 450px;
+  margin: auto 40rem;
+  max-width: 100%;
 }
 
-.final form {
-  margin: auto;
+.mobile-img {
+  width: 600px;
+  padding-top: 4rem;
+}
+.download-text {
+  width: 600px;
+}
+
+.download-text h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.download-text p {
+  margin-top: 1rem;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+/* Section 3 */
+
+.freq {
+  padding: 4rem 3rem;
+  width: 70%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.faqs {
+  max-width: 700px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px;
+  cursor: pointer;
+}
+
+.freq h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+/* Section 4 */
+
+.final {
+  width: 100%;
+  min-height: 100vh;
+}
+
+#form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 100px;
-  margin-bottom: 4px;
-}
-
-.final input {
-  margin-bottom: 20px;
-  padding: 1rem;
-  width: 550px;
-  color: #666666;
+  margin-top: 100px;
 }
 
 .final p {
@@ -231,35 +282,75 @@ hr {
 
 .final .sbt {
   background: #e50914;
-  color: #fff;
+  color: white;
   width: 550px;
   height: 50px;
   font-size: 3rem;
-  padding: 1rem 0 1rem 0;
-  margin-left: 10px;
   border: none;
   border-radius: 3px;
   font-weight: 500;
   text-align: center;
   cursor: pointer;
 }
-#text {
-  display: block;
-  color: #000;
-  font-weight: 300;
-  font-style:italic;
-  padding: 5px;
-}
 
-#form .inputBox {
+.form-action {
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
   position: relative;
 }
-#form.invalid #inputBox:before {
-  content: '';
-  position: absolute;
-  right: 12px;
-  top: 12px;
-  width: 24px;
-  height: 24px;
-  z-index: 1000;
+
+.form-action input {
+  border-radius: 3px;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  width: 550px;
+  color: #666666;
 }
+
+.form-action .success input {
+  border-color: #2ecc71;
+}
+
+.form-action .error input {
+  border-color: #e74c3c;
+}
+
+.form-action i {
+  visibility: hidden;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+}
+
+.form-action.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-action.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-action small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.form-action.error small {
+  visibility: visible;
+}
+
+/* Media */
+
+
+
+
+
+
