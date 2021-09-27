@@ -40,7 +40,15 @@ color: white;
   background-size: cover;
   background-position: center;
   padding-bottom: 200px;
-} 
+}
+
+@media (min-width: 300px) and (max-width: 649px) {
+  main {
+    display: flex;
+    align-items: center;
+  }
+}
+
 
 nav {
   display: flex;
@@ -50,7 +58,14 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-
+@media screen and (min-width: 375px) and (max-width: 439px){
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+  }
+}
 .logo {
   display: flex;
   flex: 1 1;
@@ -175,9 +190,9 @@ hr {
 
 .wrapper {
   max-width: 1202px;
+  width: 100%;
   margin: 0 auto;
 }
-
 .enjoy {
   display: flex;
   justify-content: space-between;
@@ -186,9 +201,7 @@ hr {
 
 .enjoy-text {
   max-width: 600px;
-
 }
-
 .enjoy-text h1 {
   font-size: 4rem;
   font-weight: 600;
@@ -368,7 +381,7 @@ svg {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .final p {
@@ -488,9 +501,45 @@ svg {
   color: grey;
 }
 
-
 /* Media */
 
+
+@media screen and (min-width: 375px) and (max-width: 700px){
+
+  .enjoy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .mobile-img {
+    max-width: 600px;
+  }
+  .download-text {
+    width: 600px;
+    padding-bottom: 80px;
+  }
+  .stream {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .kids {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center
+  }
+
+
+}
 
 
 
