@@ -24,7 +24,6 @@ img {
  width: 100%;
 }
 
-
 body  {
 font-family: 'Poppins', sans-serif;
 background: black;
@@ -40,7 +39,7 @@ color: white;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
+  padding-bottom: 200px;
 } 
 
 nav {
@@ -174,17 +173,20 @@ hr {
 
 /* Section 1 */
 
+.wrapper {
+  max-width: 1202px;
+  margin: 0 auto;
+}
+
 .enjoy {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  height: 450px;
-  margin: auto 40rem;
 }
 
 .enjoy-text {
   max-width: 600px;
-  width: 100%;
+
 }
 
 .enjoy-text h1 {
@@ -208,13 +210,10 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 450px;
-  margin: auto 40rem;
-  max-width: 100%;
 }
 
 .mobile-img {
-  width: 600px;
+  max-width: 600px;
   padding-top: 4rem;
 }
 .download-text {
@@ -234,34 +233,133 @@ hr {
 
 /* Section 3 */
 
-.freq {
-  padding: 4rem 3rem;
-  width: 70%;
-  min-height: 100vh;
+
+.stream {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stream-content h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.stream-content p {
+  margin-top: 1rem;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+.mac .tv-mac {
+  max-width: 600px;
+  padding-top: 4rem;
+}
+
+/* Section 4 */
+
+.kids {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kids-img {
+  max-width: 600px;
+  padding-top: 4rem;
+}
+.kids-text {
+  width: 600px;
+}
+
+.kids-text h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.kids-text p {
+  margin-top: 1rem;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+/* Section 5 */
+
+.frequently {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  margin-bottom: 50px;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.faqs {
-  max-width: 700px;
-  margin-top: 2rem;
+.title {
+  font-size: 3.2rem;
+  margin: 2rem;
+}
+
+.faq {
+  max-width: 600px;
   padding-bottom: 1rem;
-  border-bottom: 2px;
   cursor: pointer;
 }
 
-.freq h1 {
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 600;
+.questions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: left;
+  background-color: #303030;
+  padding: 16px 44px 16px 24px;
+}
+.questions h3 {
+  font-size: 19px;
+  font-weight: lighter;
+  padding-top: 0.5rem;
 }
 
-/* Section 4 */
+.answer p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  line-height: 1.6;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  text-align: left;
+  background-color: #303030;
+  padding: 5px 20px;
+}
+
+.faq.active .answer {
+  max-height: 400px;
+
+}
+.faq.active svg {
+  transform: rotate(180deg);
+}
+
+svg {
+  transition: transform .5s ease-in;
+  fill: #fff;
+  width: 20px;
+  float: right;
+  cursor: pointer;
+}
+
+/* Section 6 */
 
 .final {
   width: 100%;
-  min-height: 100vh;
+  margin-bottom: 50px;
 }
 
 #form {
@@ -346,6 +444,50 @@ hr {
 .form-action.error small {
   visibility: visible;
 }
+/* Section 7 */
+
+.footer {
+  max-width: 100%;
+  margin: 70px 200px;
+}
+
+.footer a {
+  color: #888;
+  letter-spacing: 0.03em;
+}
+
+.footer p {
+  margin-bottom: 2rem;
+}
+
+.footer-column {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4rem;
+}
+
+.footer li {
+  line-height: 1.9;
+  list-style: none;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.last {
+  margin-top: 40px;
+  border: 1px solid white;
+  padding: 5px 10px;
+  font-size: 1.3rem;
+  width: 18%;
+  color: grey;
+}
+
+.footer p {
+  margin-top: 30px;
+  font-size: 14px;
+  color: grey;
+}
+
 
 /* Media */
 
